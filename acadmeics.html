@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="viewport" content="width=device-width, intial-scale=0.1">
         <style>
             ul {
@@ -42,12 +43,76 @@
             left: 50%;
             }
             .wel{
-                font-size: 3rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    background-color: orangered;
-    letter-spacing: .2rem;
+              font-family: 'Brush Script MT', cursive;
+              font-size: 4rem;
+              padding: 0;
+              color: white;
+              text-align: center;
             }
+            body{
+              background-image: url(img/book-library-with-open-textbook.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+            }
+            .card {
+              position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 300px;
+  background-color: white;
+  width: 300px;
+  left: 3rem;
+}
+.card_2 {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 300px;
+  background-color: white;
+  width: 300px;
+  left:36rem;
+  top:-22rem;
+}
+.card_3 {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 300px;
+  background-color: white;
+  width: 300px;
+  top:-43rem;
+  left:70rem;
+}
+.card:hover {
+  transform:scale(1.2);
+}
+.card_2:hover {
+  transform:scale(1.2);
+}
+.card_3:hover {
+  transform:scale(1.2);
+}
+
+.container {
+  padding: 2px 16px;
+  background-color:grey;
+  color:aqua;
+  height: 120px;
+}
+.container_2 {
+  padding: 2px 16px;
+  background-color:grey;
+  color:palegoldenrod;
+  
+}
+.container_3 {
+  padding: 2px 16px;
+  background-color:grey;
+  color:palegoldenrod;
+  height: 120px;
+  
+}
             </style>
     </head>
     <body>
@@ -60,6 +125,27 @@
   </ul>
   <div class="wel">
     <h1>Academics</h1>
+    </div>
+    <div class="card">
+      <img src="img/icse.png" alt="school" style="width:300px">
+      <div class="container">
+        <h4><b>DON BOSCO ACADEMY</b></h4> 
+        <p>Class 10th</p> 
+      </div>
+    </div>
+    <div class="card_2">
+      <img src="img/Nucleus-Education.jpg" alt="institute" style="width:240px">
+      <div class="container_2">
+        <h4><b>Nucleus education,kota</b></h4> 
+        <p>IIT-JEE prep</p> 
+      </div>
+    </div>
+    <div class="card_3">
+      <img src="img/2f8d5644596841b75aa03bc9a1dc373d.jpg" alt="institute iit" style="width:300px ">
+      <div class="container_3">
+        <h4><b>IIT KHARAGPUR</b></h4> 
+        <p>architecture</p> 
+      </div>
     </div>
   </body>
   </html>

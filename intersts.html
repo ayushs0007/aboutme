@@ -37,18 +37,81 @@
             .active {
               background-color: grey;
             }
-            .img{
-                padding: 0;
-                border: 20px;
-            left: 50%;
-            }
             .wel{
-                font-size: 3rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    background-color: orangered;
-    letter-spacing: .2rem;
+              font-family: 'Brush Script MT', cursive;
+              font-size: 4rem;
+              padding: 0;
+              color: white;
+              text-align: center;
             }
+            body{
+              background-image: url(img/beautiful-shot-colorful-sunset-beach.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+            }
+            .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px white;
+ 
+}
+.flip-card_2 {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px white;
+ 
+}
+
+.flip-card-inner {
+  position: relative;
+  left: 6rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+.flip-card-inner_2 {
+  position: relative;
+  top:-19rem;
+  left:70rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card_2:hover .flip-card-inner_2 {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front_2, .flip-card-back_2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-back {
+  background-color:grey;
+  color:black;
+  transform: rotateY(180deg);
+}
+.flip-card-back_2 {
+  background-color:grey;
+  color:black;
+  transform: rotateY(180deg);
+}
             </style>
     </head>
     <body>
@@ -61,6 +124,26 @@
   </ul>
   <div class="wel">
     <h1>intersts</h1>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/cricket-equipments-green-grass.jpg" alt="cricket" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Playing cricket</h1>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card_2">
+      <div class="flip-card-inner_2">
+        <div class="flip-card-front_2">
+          <img src="img/close-up-hands-holding-open-book.jpg" alt="book" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back_2">
+          <h1>Reading books</h1>
+        </div>
+      </div>
     </div>
   </body>
   </html>
